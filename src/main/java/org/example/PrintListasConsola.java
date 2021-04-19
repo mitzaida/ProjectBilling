@@ -10,12 +10,21 @@ public class PrintListasConsola {
         System.out.println("             CAJERO: ");
         System.out.println("             TIPO DE PAGO:"               + "\n"+"\n");
 
-        System.out.println(" Código Item   Descripción Item   Precio Item   Descuento         Precio Item Neto  " );
+        System.out.println(" Código Item   Descripción Item   Precio Item         Monto Descuento/Descrip.Descto           Precio Item Neto  " );
 
-        System.out.println("____________________________________________________________________________________" );
+        System.out.println("__________________________________________________________________________________________________________________" );
 
     }  //  Fin del metodo imprimirEncabezado
 
+
+    public static void imprimirPieFactura() {
+        System.out.println("\n" + "******** ITEMS DISPONIBLES CON MÁS DE 3 PIEZAS - DESDE PROCESAR FACTURA");
+        System.out.println("\n");
+        System.out.println("_______________________________________________________________________________________________________________");
+//        System.out.println("TOTAL FACTURA  ---------------    " + totalPrecioBruto + "                 "+ totalDescuento +
+  //              "                                    " + totalPrecioNeto);
+
+    }  //  Fin del metodo imprimirPieFactura
 
 
 

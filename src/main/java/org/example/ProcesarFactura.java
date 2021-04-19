@@ -59,7 +59,7 @@ public class ProcesarFactura {
             int cantidaddispoitem = itemfactura.items.get(y).getCantdispo();
 
 //            if (cantidaddispoitem <= 3) {
-//             //  como hago para usar un ITER al for
+//             //  N E I R O O O O O O O O              como hago para usar un ITER al for
 //                for (Object  : itemfactura) {
 //                    iter;
 //                }
@@ -71,10 +71,9 @@ public class ProcesarFactura {
                 // Verifico relación del item con algún descuento en RELID ArrayList.
                 //int xcoddes;
                 for (int x = 0 ; x < itemConDescuento.relID.size() ; x++ ) {
-                    String mz5 = itemfactura.items.get(x).getCoditem();  // el coditem para buscar si tiene descto
 
-                    if (mz5 == itemConDescuento.relID.get(x).getCoditem()) {
-                        //int xcoddes;
+                    if (itemfactura.items.get(x).getCoditem() == itemConDescuento.relID.get(x).getCoditem()) {
+
                         xcoddes = itemConDescuento.relID.get(x).getCoddes();
                         //buscaDescuento(itemConDescuento.relID.get(x).getCoddes());
 
@@ -91,7 +90,7 @@ public class ProcesarFactura {
 
                     } else {
 
-                        System.out.println(mz4 + " sin descuento.");  // si no tiene descuento imprime.
+                        System.out.println(mz4 + "     machy       sin descuento.");  // si no tiene descuento imprime.
 
                         //Acumula los precio para el total.
                         totalprecio = totalprecio + xprecio;
@@ -107,8 +106,8 @@ public class ProcesarFactura {
 
         System.out.println("\n"+"ITEMS DISPONIBLES CON MÁS DE 3 PIEZAS - DESDE PROCESAR FACTURA");
         System.out.println("\n");
-        System.out.println("_____________________________________________________________");
-        System.out.println("TOTAL FACTURA  ----------------> "+ xprecio);
+        System.out.println("_____________________________________________________________________________________");
+        System.out.println("                                             TOTAL FACTURA  ----------------> "+ xprecio);
 
       //  calculoTotalNeto();
 
