@@ -8,7 +8,7 @@ public class Item {
     private double precioitem;
     private int cantdispo;
 
-    public ArrayList<Item> items = new ArrayList<>();
+    public static ArrayList<Item> items = new ArrayList<>();
 
     public Item () {}
 
