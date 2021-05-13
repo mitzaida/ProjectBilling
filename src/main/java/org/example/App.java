@@ -2,20 +2,20 @@ package org.example;
 
 /**
  * Application
- *
  */
 public class App {
-    public static void main( String[] args ) {
-
+    public static void main(String[] args) {
         // jUST to see, print all the lists.
-        PrintListasConsola.imprimirListas();
+//        PrintListasConsola.imprimirListas();
 
-       // ProcesarFactura.seleccionItemFactura();
-
-        NewProcesarFactura.seleccionItemFactura();
-
+        LastProcesarFactura.selecItemFactura();
     }  //  fin del main methos.
 
 
-
 }
+
+
+
+
+
+

@@ -1,33 +1,33 @@
 package org.example;
+
 import org.example.datalistas.*;
-import java.util.Date;
+
+//
+//import java.time.Instant;
+//import java.util.Date;
 
 
 public class PrintListasConsola {
 
-    public static void imprimirEncabezado() {
-        System.out.println("             FACTURA # : " + "4444"  +  "                     FECHA : "+ "hoy jajjajajaj"+"\n") ;
-        System.out.println("             CAJERO: ");
-        System.out.println("             TIPO DE PAGO:"               + "\n"+"\n");
+    public static void imprimirEncabezado(String numFactura, String nomCaj, String tipoPago) {
+        System.out.println(String.format("FACTURA # : %s                     FECHA : %s  ", numFactura, " "));
+        System.out.println("             CAJERO: " + nomCaj);
+        System.out.printf("             TIPO DE PAGO: %s \n\n", tipoPago);
 
-        System.out.println(" Código Item   Descripción Item   Precio Item         Monto Descuento/Descrip.Descto           Precio Item Neto  " );
+        System.out.println(" Código Item   Descripción Item   Precio Item         Monto Descuento/Descrip.Descto           Precio Item Neto  ");
 
-        System.out.println("__________________________________________________________________________________________________________________" );
+        System.out.println("__________________________________________________________________________________________________________________");
 
     }  //  Fin del metodo imprimirEncabezado
 
 
     public static void imprimirPieFactura() {
-        System.out.println("\n" + "******** ITEMS DISPONIBLES CON MÁS DE 3 PIEZAS - DESDE PROCESAR FACTURA");
-        System.out.println("\n");
+        System.out.println("******** ITEMS DISPONIBLES CON 3o más  PIEZAS - DESDE PROCESAR FACTURA");
         System.out.println("_______________________________________________________________________________________________________________");
 //        System.out.println("TOTAL FACTURA  ---------------    " + totalPrecioBruto + "                 "+ totalDescuento +
-  //              "                                    " + totalPrecioNeto);
+        //              "                                    " + totalPrecioNeto);
 
     }  //  Fin del metodo imprimirPieFactura
-
-
-
 
 
     public static void imprimirListas() {
@@ -69,7 +69,8 @@ public class PrintListasConsola {
 
         // Instanciando ArrayList Descuento que es de tipo Descuento que es la clase e Imprimiendo esa lista en consola just to see.
         Descuento descuentoRefObj = new Descuento();
-        descuentoRefObj.cargaListaDescuento();;
+        descuentoRefObj.cargaListaDescuento();
+        ;
 
         for (int iz3 = 0; iz3 < descuentoRefObj.descuentos.size(); iz3++) {
             String mz4 = descuentoRefObj.descuentos.get(iz3).getDatosDescuento();

@@ -17,7 +17,7 @@ public class NewProcesarFactura {
     public static void seleccionItemFactura() {
 
         // Imprime cabecera
-        PrintListasConsola.imprimirEncabezado(); // si saco este y lo coloco en otro method, imprime pero no lo veo.
+//        PrintListasConsola.imprimirEncabezado(); // si saco este y lo coloco en otro method, imprime pero no lo veo.
 
         Item itemfactura = new Item();
         itemfactura.cargaItemInventario(); // Neiro xq tengo q volver a cargar aqui si ya lo hice.
@@ -29,9 +29,9 @@ public class NewProcesarFactura {
         double xPrecio = 0;
         int xcoddes;
         String xcoditem = " ";
-        double totalPrecioBruto = 0;
-        double totalPrecioNeto = 0;
-        double totalDescuento = 0;
+//        double totalPrecioBruto = 0;
+//        double totalPrecioNeto = 0;
+//        double totalDescuento = 0;
         boolean siHayDescto = false;
 
         String descriDes = "";
@@ -65,14 +65,12 @@ public class NewProcesarFactura {
                         porceDes     = objz.getRate();
                         descriDes = objz.getDesdes();
 
-//                        System.out.println(datosItemFactura + "                 " + ((xPrecio*objz.getRate())/100) + "   " + objz.getDesdes() + "       " + (xPrecio-((xPrecio*objz.getRate())/100) ));
                         siHayDescto = true;
                         break;
 
                     } else {
 
                        siHayDescto = false;
-                       //System.out.println(datosItemFactura + "                          Sin Descto    " + "                     " + xPrecio);  // si no tiene descuento imprime.
 
                     }
 
